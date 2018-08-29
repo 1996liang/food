@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<!-- 修改当前 Struts 应用的主题 -->
+    <package name="admin" namespace="/" extends="struts-default">
+    	    	<!-- 配置自定义拦截器 -->
+    	<interceptors>
+    		<!-- <interceptor name="adminInterceptor" class="adminInterceptor"/> -->
+			<interceptor-stack name="newStack">
+				<interceptor-ref name="defaultStack">
+					<param name="fileUpload.maximumSize">2097152</param>
+					<!--  	
+					<param name="fileUpload.allowedTypes">text/html,text/xml</param>
+					<param name="fileUpload.allowedExtensions">html,dtd,xml</param>
+					-->
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="newStack"></default-interceptor-ref>
+ 		<global-results>
+			<result name="login" type="redirect">admin/login.jsp</result>
+		</global-results>
+ 		<action name="admin">
+ 			<result type="redirect">admin/login.jsp</result>
+ 		</action> 
+ 		<action name="fileUpload_upload" class="fileUploadAction">
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<!-- <interceptor-ref name="adminInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref> -->
+ 		</action> 
+ 		<action name="admin_login" class="adminUserAction" method="login">
+ 			<result type="redirect">admin/index.jsp</result>
+ 			<result type="redirect" name="error">admin/login.jsp</result>
+ 		</action> 
+ 		<action name="admin_logout" class="adminUserAction" method="logout">
+ 			<result type="redirect">admin/login.jsp</result>
+ 			<!-- <interceptor-ref name="adminInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref> -->
+ 		</action> 
+ 		<action name="admin_goodsManage_*" class="goodsManageAction" method="{1}">
+ 			<result name="goodsList">/admin/product-list.jsp</result>
+ 			<result name="pictureShow">/admin/picture-show.jsp</result>
+ 			<result name="addGoods">/admin/product-add.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<!-- <interceptor-ref name="adminInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref> -->
+ 		</action> 
+ 		<action name="admin_adminOrderManage_*" class="adminOrderManageAction" method="{1}">
+ 			<result name="allOrderList">/admin/allOrder-list.jsp</result>
+ 			<result name="getUnfilledOrders">/admin/unfilledOrders-list.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<!-- <interceptor-ref name="adminInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref> -->
+ 		</action> 
+ 		<action name="admin_classify_*" class="classifyAction" method="{1}">
+ 			<result name="oneClassify">/admin/category1-list.jsp</result>
+ 			<result name="twoClassify">/admin/category2-list.jsp</result>
+ 			<result name="threeClassify">/admin/category3-list.jsp</result>
+ 			<result name="oneClassify-add">/admin/category1-add.jsp</result>
+ 			<result name="twoClassify-add">/admin/category2-add.jsp</result>
+ 			<result name="threeClassify-add">/admin/category3-add.jsp</result>
+ 			<result name="redirect-one-list" type="chain">
+ 				<param name="actionName">admin_classify_getOneClassifyList</param>
+ 				<param name="nameSpace">/</param>
+ 				<param name="method">getOneClassifyList</param>
+ 			</result>
+ 			<result name="redirect-two-list" type="chain">
+ 				<param name="actionName">admin_classify_getTwoClassifyList</param>
+ 				<param name="nameSpace">/</param>
+ 				<param name="method">getTwoClassifyList</param>
+ 			</result>
+ 			<result name="redirect-three-list" type="chain">
+ 				<param name="actionName">admin_classify_getThreeClassifyList</param>
+ 				<param name="nameSpace">/</param>
+ 				<param name="method">getThreeClassifyList</param>
+ 			</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<!-- <interceptor-ref name="adminInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref> -->
+ 		</action> 
+ 		<action name="admin_*">
+ 			<result type="redirect">admin/{1}.jsp</result>
+ 		</action> 
+    </package>
+</struts>   

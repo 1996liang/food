@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-11 17:01:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.anta.classify.entity.OneClassify" table="ONE_CLASSIFY">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+         <property name="imageLabel" type="java.lang.String">
+            <column name="IMAGELABEL" />
+        </property>
+        <set name="twoClassifys" table="TWO_CLASSIFY" lazy="false">
+        	<key column="ONE_CLASSIFY_ID"></key>
+        	<one-to-many class="com.anta.classify.entity.TwoClassify"/>
+        </set>
+    </class>
+</hibernate-mapping>

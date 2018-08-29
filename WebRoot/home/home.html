@@ -1,0 +1,1414 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>é¦é¡µ</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
+
+		<link href="../basic/css/demo.css" rel="stylesheet" type="text/css" />
+
+		<link href="../css/hmstyle.css" rel="stylesheet" type="text/css" />
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+		<script src="../js/home.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="hmtop">
+			<!--é¡¶é¨å¯¼èªæ¡ -->
+			<div class="am-container header">
+				<ul class="message-l">
+					<div class="topMessage">
+						<div class="menu-hd">
+							<a href="#" target="_top" class="h">äº²ï¼è¯·ç»å½</a>
+							<a href="#" target="_top">åè´¹æ³¨å</a>
+						</div>
+					</div>
+				</ul>
+				<ul class="message-r">
+					<div class="topMessage home">
+						<div class="menu-hd"><a href="#" target="_top" class="h">ååé¦é¡µ</a></div>
+					</div>
+					<div class="topMessage my-shangcheng">
+						<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿</a></div>
+					</div>
+					<div class="topMessage mini-cart">
+						<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+					</div>
+					<div class="topMessage favorite">
+						<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ¶èå¤¹</span></a></div>
+				</ul>
+				</div>
+
+				<!--æ¬æµ®æç´¢æ¡-->
+
+				<div class="nav white">
+					<div class="logo"><img src="../images/logo.png" /></div>
+					<div class="logoBig">
+						<li><img src="../images/logobig.png" /></li>
+					</div>
+
+					<div class="search-bar pr">
+						<a name="index_none_header_sysc" href="#"></a>
+						<form>
+							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æç´¢" autocomplete="off">
+							<input id="ai-topsearch" class="submit am-btn" value="æç´¢" index="1" type="submit">
+						</form>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			
+			
+			<div class="banner">
+                      <!--è½®æ­ -->
+						<div class="am-slider am-slider-default scoll" data-am-flexslider id="demo-slider-0">
+							<ul class="am-slides">
+								<li class="banner1"><a href="introduction.html"><img src="../images/ad1.jpg" /></a></li>
+								<li class="banner2"><a><img src="../images/ad2.jpg" /></a></li>
+								<li class="banner3"><a><img src="../images/ad3.jpg" /></a></li>
+								<li class="banner4"><a><img src="../images/ad4.jpg" /></a></li>
+
+							</ul>
+						</div>
+						<div class="clear"></div>	
+			</div>						
+			
+			<div class="shopNav">
+				<div class="slideall">
+			        
+					   <div class="long-title"><span class="all-goods">å¨é¨åç±»</span></div>
+					   <div class="nav-cont">
+							<ul>
+								<li class="index"><a href="#">é¦é¡µ</a></li>
+                                <li class="qc"><a href="#">éªè´­</a></li>
+                                <li class="qc"><a href="#">éæ¶æ¢</a></li>
+                                <li class="qc"><a href="#">å¢è´­</a></li>
+                                <li class="qc last"><a href="#">å¤§åè£</a></li>
+							</ul>
+						    <div class="nav-extra">
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æçç¦å©
+						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
+						    </div>
+						</div>
+		        				
+						<!--ä¾§è¾¹å¯¼èª -->
+						<div id="nav" class="navfull">
+							<div class="area clearfix">
+								<div class="category-content" id="guide_2">
+									
+									<div class="category">
+										<ul class="category-list" id="js_climit_li">
+											<li class="appliance js_toggle relative first">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/cake.png"></i><a class="ml-22" title="ç¹å¿"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt class="twoClassify"><span title="èç³">èç³</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt class="twoClassify"><span title="èç³">ç¹å¿</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="åµå®æ¹æè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >åµå®æ¹æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æ ¼çæè°åº" target="_blank" href="#" rel="nofollow"><span >æ ¼çæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="é£å½¦å¤§åç´ä¾" target="_blank" href="#" rel="nofollow"><span  class="red" >é£å½¦å¤§åç´ä¾</span></a></dd>
+																		<dd><a rel="nofollow" title="çº¢eÂ·è¾è²å¦®" target="_blank" href="#" rel="nofollow"><span >çº¢eÂ·è¾è²å¦®</span></a></dd>
+																		<dd><a rel="nofollow" title="æ¬çæè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >æ¬çæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æ­æ´¾å¥³è£æ¹åç½" target="_blank" href="#" rel="nofollow"><span  class="red" >æ­æ´¾å¥³è£æ¹åç½</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											<b class="arrow"></b>	
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/cookies.png"></i><a class="ml-22" title="é¥¼å¹²ãè¨å"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="é¥¼å¹²">é¥¼å¹²</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="è¯ç">è¯ç</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">è¾æ¡</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="YYKCLOT" target="_blank" href="#" rel="nofollow"><span  class ="red" >YYKCLOT</span></a></dd>
+																		<dd><a rel="nofollow" title="æ± æ°åçç·è£" target="_blank" href="#" rel="nofollow"><span  class ="red" >æ± æ°åçç·è£</span></a></dd>
+																		<dd><a rel="nofollow" title="ç·è£æ¥å¿" target="_blank" href="#" rel="nofollow"><span >ç·è£æ¥å¿</span></a></dd>
+																		<dd><a rel="nofollow" title="ç´¢æ¯è¯ºå®æ¹æè°åº" target="_blank" href="#" rel="nofollow"><span >ç´¢æ¯è¯ºå®æ¹æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="onTTnoå²å¾" target="_blank" href="#" rel="nofollow"><span  class ="red" >onTTnoå²å¾</span></a></dd>
+																		<dd><a rel="nofollow" title="çç®è·¯ç·è£æè°åº" target="_blank" href="#" rel="nofollow"><span >çç®è·¯ç·è£æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="å³å¨ç¹åçç·è£" target="_blank" href="#" rel="nofollow"><span >å³å¨ç¹åçç·è£</span></a></dd>
+																		<dd><a rel="nofollow" title="å¡æ¯éä¸å®¶æ¹åå" target="_blank" href="#" rel="nofollow"><span  class ="red" >å¡æ¯éä¸å®¶æ¹åå</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                             <b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/meat.png"></i><a class="ml-22" title="çé£ãèç±»"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="çªèè¯">çªèè¯</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="çèä¸">çèä¸</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="å°é¦è ">å°é¦è </span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="è±é¢å·§è¯­ " target="_blank" href="#" rel="nofollow"><span  class="red" >è±é¢å·§è¯­ </span></a></dd>
+																		<dd><a rel="nofollow" title="ç³è¡£å°å±" target="_blank" href="#" rel="nofollow"><span >ç³è¡£å°å±</span></a></dd>
+																		<dd><a rel="nofollow" title="å¡æè¿ªå  " target="_blank" href="#" rel="nofollow"><span  class="red" >å¡æè¿ªå  </span></a></dd>
+																		<dd><a rel="nofollow" title="ææ¥ç«¥è¯ " target="_blank" href="#" rel="nofollow"><span >ææ¥ç«¥è¯ </span></a></dd>
+																		<dd><a rel="nofollow" title="åçç«¥è£æ¹åè¡ " target="_blank" href="#" rel="nofollow"><span >åçç«¥è£æ¹åè¡ </span></a></dd>
+																		<dd><a rel="nofollow" title="å¥ä»åç«¥è£æè°åº" target="_blank" href="#" rel="nofollow"><span >å¥ä»åç«¥è£æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æèå°¼BONDYNI" target="_blank" href="#" rel="nofollow"><span  class="red" >æèå°¼BONDYNI</span></a></dd>
+																		<dd><a rel="nofollow" title="ç«å¿æµæµ " target="_blank" href="#" rel="nofollow"><span >ç«å¿æµæµ </span></a></dd>
+																		<dd><a rel="nofollow" title="ç«¥è¡£é" target="_blank" href="#" rel="nofollow"><span  class="red" >ç«¥è¡£é</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                            <b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/bamboo.png"></i><a class="ml-22" title="ç´ é£ãå¤å³"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="è±å¹²">è±å¹²</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="å¹²ç¬">å¹²ç¬</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="é¸­è">é¸­è</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="æ­èåçæè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >æ­èåçæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="ç±ä¸èåè¡£å" target="_blank" href="#" rel="nofollow"><span >ç±ä¸èåè¡£å</span></a></dd>
+																		<dd><a rel="nofollow" title="é¦æ¸¯ä¼èå°é²è¾å°" target="_blank" href="#" rel="nofollow"><span >é¦æ¸¯ä¼èå°é²è¾å°</span></a></dd>
+																		<dd><a rel="nofollow" title="èèå¨åè¡£æ¹å" target="_blank" href="#" rel="nofollow"><span >èèå¨åè¡£æ¹å</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                             <b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/nut.png"></i><a class="ml-22" title="åæãçè´§"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">åæ</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">éå·´</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="åµåµå¿å®æ¹æè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >åµåµå¿å®æ¹æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æ ¼çæè°åº" target="_blank" href="#" rel="nofollow"><span >æ ¼çæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="é£å½¦å¤§åç´ä¾" target="_blank" href="#" rel="nofollow"><span  class="red" >é£å½¦å¤§åç´ä¾</span></a></dd>
+																		<dd><a rel="nofollow" title="çº¢eÂ·è¾è²å¦®" target="_blank" href="#" rel="nofollow"><span >çº¢eÂ·è¾è²å¦®</span></a></dd>
+																		<dd><a rel="nofollow" title="æ¬çæè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >æ¬çæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æ­æ´¾å¥³è£æ¹åç½" target="_blank" href="#" rel="nofollow"><span  class="red" >æ­æ´¾å¥³è£æ¹åç½</span></a></dd>
+																		<dd><a rel="nofollow" title="åä¼éæè°åº" target="_blank" href="#" rel="nofollow"><span >åä¼éæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="ç¬å®¶ææ£æè°åº" target="_blank" href="#" rel="nofollow"><span >ç¬å®¶ææ£æè°åº</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/candy.png"></i><a class="ml-22" title="ç³æãèé¥¯"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="ç³æ">ç³æ</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="èé¥¯">èé¥¯</span></dt>
+																		<dd><a title="çç´æ¡å¹²" href="#"><span>çç´æ¡å¹²</span></a></dd>
+																		<dd><a title="ç³æ¨±æ¡" href="#"><span>ç³æ¨±æ¡</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="YYKCLOT" target="_blank" href="#" rel="nofollow"><span  class ="red" >YYKCLOT</span></a></dd>
+																		<dd><a rel="nofollow" title="æ± æ°åçç·è£" target="_blank" href="#" rel="nofollow"><span  class ="red" >æ± æ°åçç·è£</span></a></dd>
+																		<dd><a rel="nofollow" title="ç·è£æ¥å¿" target="_blank" href="#" rel="nofollow"><span >ç·è£æ¥å¿</span></a></dd>
+																		<dd><a rel="nofollow" title="ç´¢æ¯è¯ºå®æ¹æè°åº" target="_blank" href="#" rel="nofollow"><span >ç´¢æ¯è¯ºå®æ¹æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="onTTnoå²å¾" target="_blank" href="#" rel="nofollow"><span  class ="red" >onTTnoå²å¾</span></a></dd>
+																		<dd><a rel="nofollow" title="å¡æ¯éä¸å®¶æ¹åå" target="_blank" href="#" rel="nofollow"><span  class ="red" >å¡æ¯éä¸å®¶æ¹åå</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                            <b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/chocolate.png"></i><a class="ml-22" title="å·§åå"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">å·§åå</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">æå»</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="è±é¢å·§è¯­ " target="_blank" href="#" rel="nofollow"><span  class="red" >è±é¢å·§è¯­ </span></a></dd>
+																		<dd><a rel="nofollow" title="ç³è¡£å°å±" target="_blank" href="#" rel="nofollow"><span >ç³è¡£å°å±</span></a></dd>
+																		<dd><a rel="nofollow" title="å¡æè¿ªå  " target="_blank" href="#" rel="nofollow"><span  class="red" >å¡æè¿ªå  </span></a></dd>
+																		<dd><a rel="nofollow" title="ææ¥ç«¥è¯ " target="_blank" href="#" rel="nofollow"><span >ææ¥ç«¥è¯ </span></a></dd>
+																		<dd><a rel="nofollow" title="åçç«¥è£æ¹åè¡ " target="_blank" href="#" rel="nofollow"><span >åçç«¥è£æ¹åè¡ </span></a></dd>
+																		<dd><a rel="nofollow" title="å¥ä»åç«¥è£æè°åº" target="_blank" href="#" rel="nofollow"><span >å¥ä»åç«¥è£æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æèå°¼BONDYNI" target="_blank" href="#" rel="nofollow"><span  class="red" >æèå°¼BONDYNI</span></a></dd>
+																		<dd><a rel="nofollow" title="ç«¥è¡£é" target="_blank" href="#" rel="nofollow"><span  class="red" >ç«¥è¡£é</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/fish.png"></i><a class="ml-22" title="æµ·å³ãæ²³é²"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="æµ·å¸¦ä¸">æµ·å¸¦ä¸</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="å°é±¼å¹²">å°é±¼å¹²</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="é±¿é±¼ä¸">é±¿é±¼ä¸</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a rel="nofollow" title="æ­èåçæè°åº" target="_blank" href="#" rel="nofollow"><span  class="red" >æ­èåçæè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="ç±ä¸èåè¡£å" target="_blank" href="#" rel="nofollow"><span >ç±ä¸èåè¡£å</span></a></dd>
+																		<dd><a rel="nofollow" title="ç«ç¹æé¥°" target="_blank" href="#" rel="nofollow"><span >ç«ç¹æé¥°</span></a></dd>
+																		<dd><a rel="nofollow" title="éªèµç¾åè¡£åæ¹å" target="_blank" href="#" rel="nofollow"><span >éªèµç¾åè¡£åæ¹å</span></a></dd>
+																		<dd><a rel="nofollow" title="éé»å¤«äºº" target="_blank" href="#" rel="nofollow"><span >éé»å¤«äºº</span></a></dd>
+																		<dd><a rel="nofollow" title="ä¼ç¾èåè¡£" target="_blank" href="#" rel="nofollow"><span  class="red" >ä¼ç¾èåè¡£</span></a></dd>
+																		<dd><a rel="nofollow" title="ç²å®¢åè¡£æè°åº" target="_blank" href="#" rel="nofollow"><span >ç²å®¢åè¡£æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="æ³½è³è¡æè°åº" target="_blank" href="#" rel="nofollow"><span >æ³½è³è¡æè°åº</span></a></dd>
+																		<dd><a rel="nofollow" title="å½©å©·" target="_blank" href="#" rel="nofollow"><span  class="red" >å½©å©·</span></a></dd>
+																		<dd><a rel="nofollow" title="é»å°å¸" target="_blank" href="#" rel="nofollow"><span >é»å°å¸</span></a></dd>
+																		<dd><a rel="nofollow" title="é¦æ¸¯ä¼èå°é²è¾å°" target="_blank" href="#" rel="nofollow"><span >é¦æ¸¯ä¼èå°é²è¾å°</span></a></dd>
+																		<dd><a rel="nofollow" title="èèå¨åè¡£æ¹å" target="_blank" href="#" rel="nofollow"><span >èèå¨åè¡£æ¹å</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                             <b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/tea.png"></i><a class="ml-22" title="è±è¶ãæè¶"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">èç³</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="èç³">ç¹å¿</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a title="ä»çåªå´ä½ " target="_blank" href="#" rel="nofollow"><span >ä»çåªå´ä½ </span></a></dd>
+																		<dd><a title="å¿ä½³äºº" target="_blank" href="#" rel="nofollow"><span  class="red" >å¿ä½³äºº</span></a></dd>
+																		<dd><a title="ææ´±æ®æ¯" target="_blank" href="#" rel="nofollow"><span  class="red" >ææ´±æ®æ¯</span></a></dd>
+																		<dd><a title="èç¾å" target="_blank" href="#" rel="nofollow"><span  class="red" >èç¾å</span></a></dd>
+																		<dd><a title="æµæµæ£ç»ç´è¥åº" target="_blank" href="#" rel="nofollow"><span >æµæµæ£ç»ç´è¥åº</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<b class="arrow"></b>
+											</li>
+											<li class="appliance js_toggle relative last">
+												<div class="category-info">
+													<h3 class="category-name b-category-name"><i><img src="../images/package.png"></i><a class="ml-22" title="åçãç¤¼å"></a></h3>
+													<em>&gt;</em></div>
+												<div class="menu-item menu-in top">
+													<div class="area-in">
+														<div class="area-bg">
+															<div class="menu-srot">
+																<div class="sort-side">
+																	<dl class="dl-sort">
+																		<dt><span title="å¤§åè£">å¤§åè£</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																	<dl class="dl-sort">
+																		<dt><span title="ä¸¤ä»¶å¥">ä¸¤ä»¶å¥</span></dt>
+																		<dd><a title="è¸èç³" href="#"><span>è¸èç³</span></a></dd>
+																		<dd><a title="è±æ°´èç³" href="#"><span>è±æ°´èç³</span></a></dd>
+																		<dd><a title="çå£«å·" href="#"><span>çå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢å" href="#"><span>è½¯é¢å</span></a></dd>
+																		<dd><a title="é©¬å¡é¾" href="#"><span>é©¬å¡é¾</span></a></dd>
+																		<dd><a title="åå±é¥¼" href="#"><span>åå±é¥¼</span></a></dd>
+																		<dd><a title="ççå" href="#"><span>ççå</span></a></dd>
+																		<dd><a title="è¸ä¸ææ²»" href="#"><span>è¸ä¸ææ²»</span></a></dd>
+																		<dd><a title="éé£ç§" href="#"><span>éé£ç§</span></a></dd>
+																	</dl>
+																</div>
+																<div class="brand-side">
+																	<dl class="dl-sort"><dt><span>å®ååå®¶</span></dt>
+																		<dd><a title="ç³çéä¸" target="_blank" href="#" rel="nofollow"><span >ç³çéä¸</span></a></dd>
+																		<dd><a title="å®å©éä¸" target="_blank" href="#" rel="nofollow"><span >å®å©éä¸</span></a></dd>
+																		<dd><a title="æ¯ç±éç¹éä¸" target="_blank" href="#" rel="nofollow"><span >æ¯ç±éç¹éä¸</span></a></dd>
+																		<dd><a title="æµªäººæªæª" target="_blank" href="#" rel="nofollow"><span >æµªäººæªæª</span></a></dd>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!--è½®æ­ -->
+						<script type="text/javascript">
+							(function() {
+								$('.am-slider').flexslider();
+							});
+							$(document).ready(function() {
+								$("li").hover(function() {
+									$(".category-content .category-list li.first .menu-in").css("display", "none");
+									$(".category-content .category-list li.first").removeClass("hover");
+									$(this).addClass("hover");
+									$(this).children("div.menu-in").css("display", "block")
+								}, function() {
+									$(this).removeClass("hover")
+									$(this).children("div.menu-in").css("display", "none")
+								});
+							})
+						</script>
+
+
+					<!--å°å¯¼èª -->
+					<div class="am-g am-g-fixed smallnav">
+						<div class="am-u-sm-3">
+							<a href="sort.html"><img src="../images/navsmall.jpg" />
+								<div class="title">åååç±»</div>
+							</a>
+						</div>
+						<div class="am-u-sm-3">
+							<a href="#"><img src="../images/huismall.jpg" />
+								<div class="title">å¤§èæ </div>
+							</a>
+						</div>
+						<div class="am-u-sm-3">
+							<a href="#"><img src="../images/mansmall.jpg" />
+								<div class="title">ä¸ªäººä¸­å¿</div>
+							</a>
+						</div>
+						<div class="am-u-sm-3">
+							<a href="#"><img src="../images/moneysmall.jpg" />
+								<div class="title">æèµçè´¢</div>
+							</a>
+						</div>
+					</div>
+
+					<!--èµ°é©¬ç¯ -->
+
+					<div class="marqueen">
+						<span class="marqueen-title">ååå¤´æ¡</span>
+						<div class="demo">
+
+							<ul>
+								<li class="title-first"><a target="_blank" href="#">
+									<img src="../images/TJ2.jpg"></img>
+									<span>[ç¹æ ]</span>ååçå1åç§								
+								</a></li>
+								<li class="title-first"><a target="_blank" href="#">
+									<span>[å¬å]</span>ååä¸å¹¿å·å¸ç­¾ç½²æç¥åä½åè®®
+								     <img src="../images/TJ.jpg"></img>
+								     <p>XXXXXXXXXXXXXXXXXX</p>
+							    </a></li>
+							    
+						<div class="mod-vip">
+							<div class="m-baseinfo">
+								<a href="../person/index.html">
+									<img src="../images/getAvatar.do.jpg">
+								</a>
+								<em>
+									Hi,<span class="s-name">å°å®å½</span>
+									<a href="#"><p>ç¹å»æ´å¤ä¼æ æ´»å¨</p></a>									
+								</em>
+							</div>
+							<div class="member-logout">
+								<a class="am-btn-warning btn" href="login.html">ç»å½</a>
+								<a class="am-btn-warning btn" href="register.html">æ³¨å</a>
+							</div>
+							<div class="member-login">
+								<a href="#"><strong>0</strong>å¾æ¶è´§</a>
+								<a href="#"><strong>0</strong>å¾åè´§</a>
+								<a href="#"><strong>0</strong>å¾ä»æ¬¾</a>
+								<a href="#"><strong>0</strong>å¾è¯ä»·</a>
+							</div>
+							<div class="clear"></div>	
+						</div>																	    
+							    
+								<li><a target="_blank" href="#"><span>[ç¹æ ]</span>æ´æ²³å¹´æ«å¤§ä¿ï¼ä½è³ä¸¤ä»¶äºæ</a></li>
+								<li><a target="_blank" href="#"><span>[å¬å]</span>ååãåä¸­é¨åå°åºééå»¶è¿</a></li>
+								<li><a target="_blank" href="#"><span>[ç¹æ ]</span>å®¶çµçæ¬¢åäº¿ç¤¼å¸ ä¹°1é1ï¼</a></li>
+								
+							</ul>
+                        <div class="advTip"><img src="../images/advTip.jpg"/></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+					if ($(window).width() < 640) {
+						function autoScroll(obj) {
+							$(obj).find("ul").animate({
+								marginTop: "-39px"
+							}, 500, function() {
+								$(this).css({
+									marginTop: "0px"
+								}).find("li:first").appendTo(this);
+							})
+						}
+						$(function() {
+							setInterval('autoScroll(".demo")', 3000);
+						})
+					}
+				</script>
+			</div>
+			<div class="shopMainbg">
+				<div class="shopMain" id="shopmain">
+
+					<!--ä»æ¥æ¨è -->
+
+					<div class="am-g am-g-fixed recommendation">
+						<div class="clock am-u-sm-3" ">
+							<img src="../images/2016.png "></img>
+							<p>ä»æ¥<br>æ¨è</p>
+						</div>
+						<div class="am-u-sm-4 am-u-lg-3 ">
+							<div class="info ">
+								<h3>ççæé±¼</h3>
+								<h4>å¼å¹´ç¦å©ç¯</h4>
+							</div>
+							<div class="recommendationMain ">
+								<img src="../images/tj.png "></img>
+							</div>
+						</div>						
+						<div class="am-u-sm-4 am-u-lg-3 ">
+							<div class="info ">
+								<h3>å¤è´§è¿å¬</h3>
+								<h4>è®©ç±æ©åå®¶</h4>
+							</div>
+							<div class="recommendationMain ">
+								<img src="../images/tj1.png "></img>
+							</div>
+						</div>
+						<div class="am-u-sm-4 am-u-lg-3 ">
+							<div class="info ">
+								<h3>æµªæ¼«æäººè</h3>
+								<h4>ççèè</h4>
+							</div>
+							<div class="recommendationMain ">
+								<img src="../images/tj2.png "></img>
+							</div>
+						</div>
+
+					</div>
+					<div class="clear "></div>
+					<!--ç­é¨æ´»å¨ -->
+
+					<div class="am-container activity ">
+						<div class="shopTitle ">
+							<h4>æ´»å¨</h4>
+							<h3>æ¯ææ´»å¨ ä¼æ äº«ä¸å </h3>
+							<span class="more ">
+                              <a class="more-link " href="# ">å¨é¨æ´»å¨</a>
+                            </span>
+						</div>
+					
+					  <div class="am-g am-g-fixed ">
+						<div class="am-u-sm-3 ">
+							<div class="icon-sale one "></div>	
+								<h4>ç§æ</h4>							
+							<div class="activityMain ">
+								<img src="../images/activity1.jpg "></img>
+							</div>
+							<div class="info ">
+								<h3>æ¥èéç¤¼ä¼é</h3>
+							</div>														
+						</div>
+						
+						<div class="am-u-sm-3 ">
+						  <div class="icon-sale two "></div>	
+							<h4>ç¹æ </h4>
+							<div class="activityMain ">
+								<img src="../images/activity2.jpg "></img>
+							</div>
+							<div class="info ">
+								<h3>æ¥èéç¤¼ä¼é</h3>								
+							</div>							
+						</div>						
+						
+						<div class="am-u-sm-3 ">
+							<div class="icon-sale three "></div>
+							<h4>å¢è´­</h4>
+							<div class="activityMain ">
+								<img src="../images/activity3.jpg "></img>
+							</div>
+							<div class="info ">
+								<h3>æ¥èéç¤¼ä¼é</h3>
+							</div>							
+						</div>						
+
+						<div class="am-u-sm-3 last ">
+							<div class="icon-sale "></div>
+							<h4>è¶å¼</h4>
+							<div class="activityMain ">
+								<img src="../images/activity.jpg "></img>
+							</div>
+							<div class="info ">
+								<h3>æ¥èéç¤¼ä¼é</h3>
+							</div>													
+						</div>
+
+					  </div>
+                   </div>
+					<div class="clear "></div>
+
+					<!--çç¹-->
+					
+					<div class="am-container ">
+						<div class="shopTitle ">
+							<h4>çå</h4>
+							<h3>æ¯ä¸éçåé½æä¸ä¸ªæäº</h3>
+							<div class="today-brands ">
+								<a href="# ">æ¡è±ç³</a>
+								<a href="# ">å¥¶ç®é¥</a>
+								<a href="# ">æ å­ç³ </a>
+								<a href="# ">é©¬å¡é¾</a>
+								<a href="# ">éé£ç§</a>
+								<a href="# ">è±è±é»</a>
+							</div>
+							<span class="more ">
+                    <a class="more-link " href="# ">æ´å¤ç¾å³</a>
+                        </span>
+						</div>
+					</div>
+					
+					<div class="am-g am-g-fixed floodOne ">
+						<div class="am-u-sm-5 am-u-md-3 am-u-lg-4 text-one ">
+							<a href="# ">
+								<div class="outer-con ">
+									<div class="title ">
+										é¶é£å¤§ç¤¼åå¼æ¢å¦
+									</div>					
+									<div class="sub-title ">
+										å½å°é±¼å¿æä¸è½¯è±è
+									</div>
+								</div>
+                                  <img src="../images/act1.png " />								
+							</a>
+						</div>
+						<div class="am-u-sm-7 am-u-md-5 am-u-lg-4">
+							<div class="text-two">
+								<div class="outer-con ">
+									<div class="title ">
+										éªä¹æåé£å¤§ç¦
+									</div>									
+									<div class="sub-title ">
+										ä»å®ï¼Â¥13.8
+									</div>
+									
+								</div>
+								<a href="# "><img src="../images/act2.png " /></a>
+							</div>
+							<div class="text-two last">
+								<div class="outer-con ">
+									<div class="title ">
+										éªä¹æåé£å¤§ç¦
+									</div>
+									<div class="sub-title ">
+										ä»å®ï¼Â¥13.8
+									</div>
+									
+								</div>
+								<a href="# "><img src="../images/act2.png " /></a>
+						    </div>
+						</div>
+		             <div class="am-u-sm-12 am-u-md-4 ">
+						<div class="am-u-sm-3 am-u-md-6 text-three">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+
+						<div class="am-u-sm-3 am-u-md-6 text-three">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+
+						<div class="am-u-sm-3 am-u-md-6 text-three">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+
+						<div class="am-u-sm-3 am-u-md-6 text-three last ">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+					</div>
+
+					</div>
+                 <div class="clear "></div>
+					<!--åæ-->
+					<div class="am-container ">
+						<div class="shopTitle ">
+							<h4>åæ</h4>
+							<h3>é¥é¥èèï¼åå³æ ç©·</h3>
+							<div class="today-brands ">
+								<a href="# ">è°æ</a>
+								<a href="# ">æ¾å­</a>
+								<a href="# ">å¤å¨å¤·æ </a>
+								<a href="# ">ç¢§æ ¹æ</a>
+								<a href="# ">å¼å¿æ</a>
+								<a href="# ">æ ¸æ¡ä»</a>
+							</div>
+							<span class="more ">
+                    <a class="more-link " href="# ">æ´å¤ç¾å³</a>
+                        </span>
+						</div>
+					</div>
+					<div class="am-g am-g-fixed floodTwo ">
+						
+						
+						<div class="am-u-sm-5 am-u-md-4 text-one ">
+							<a href="# ">
+								<img src="../images/act1.png " />
+								<div class="outer-con ">
+									<div class="title ">
+										é¶é£å¤§ç¤¼åå¼æ¢å¦
+									</div>
+									<div class="sub-title ">
+										å½å°é±¼å¿æä¸è½¯è±è
+									</div>
+									
+								</div>
+							</a>
+						</div>
+						<div class="am-u-sm-7 am-u-md-4 am-u-lg-2 text-two">
+								<div class="outer-con ">
+									<div class="title ">
+										éªä¹æåé£å¤§ç¦
+									</div>
+									
+									<div class="sub-title ">
+										ä»å®ï¼Â¥13.8
+									</div>
+								</div>
+								<a href="# "><img src="../images/5.jpg " /></a>						
+						</div>
+						
+						<div class="am-u-md-4 am-u-lg-2 text-three">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+						<div class="am-u-md-4 am-u-lg-2 text-three">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>
+						<div class="am-u-sm-6 am-u-md-4 am-u-lg-2 text-two ">
+								<div class="outer-con ">
+									<div class="title ">
+										éªä¹æåé£å¤§ç¦
+									</div>
+									
+									<div class="sub-title ">
+										ä»å®ï¼Â¥13.8
+									</div>
+								</div>
+								<a href="# "><img src="../images/5.jpg " /></a>						
+						</div>						
+						<div class="am-u-sm-6 am-u-md-3 am-u-lg-2 text-four ">
+								<div class="outer-con ">
+									<div class="title ">
+										éªä¹æåé£å¤§ç¦
+									</div>
+									
+									<div class="sub-title ">
+										ä»å®ï¼Â¥13.8
+									</div>
+								</div>
+								<a href="# "><img src="../images/5.jpg " /></a>						
+						</div>				
+						<div class="am-u-sm-4 am-u-md-3 am-u-lg-4 text-five">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+								
+							</div>
+							<a href="# "><img src="../images/act2.png " /></a>
+						</div>	
+						<div class="am-u-sm-4 am-u-md-3 am-u-lg-2 text-six">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+							</div>
+							<a href="# "><img src="../images/act3.png " /></a>
+						</div>	
+						<div class="am-u-sm-4 am-u-md-3 am-u-lg-4 text-five">
+							<div class="outer-con ">
+								<div class="title ">
+									å°ä¼å¸ä¸
+								</div>
+								<div class="sub-title ">
+									å°é²ä»·ï¼Â¥4.8
+								</div>
+								
+							</div>
+							<a href="# "><img src="../images/act2.png " /></a>
+						</div>							
+					</div>
+
+					<div class="clear "></div>
+
+
+                 
+					<div class="am-container ">
+						<div class="shopTitle ">
+							<h4>æµ·å³</h4>
+							<h3>ä½ æ¯æçä¼ä¹ç¾ä¹ï¼ä¸ï¼ææ¯ä½ å°é±¼å¹²</h3>
+							<div class="today-brands ">
+								<a href="# ">å°é±¼å¹²</a>
+								<a href="# ">æµ·è</a>
+								<a href="# ">é±¿é±¼ä¸</a>
+								<a href="# ">æµ·å¸¦ä¸</a>
+							</div>
+							<span class="more ">
+                    <a class="more-link " href="# ">æ´å¤ç¾å³</a>
+                        </span>
+						</div>
+					</div>
+					<div class="am-g am-g-fixed flood method3 ">
+						<ul class="am-thumbnails ">
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp.jpg " />
+										<div class="pro-title ">è¨æç±³ 1+1å°é¸¡è¿</div>
+										<span class="e-price ">ï¿¥29.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp2.jpg " />
+										<div class="pro-title ">ZEK åå³æµ·è</div>
+										<span class="e-price ">ï¿¥8.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp.jpg " />
+										<div class="pro-title ">è¨æç±³ 1+1å°é¸¡è¿</div>
+										<span class="e-price ">ï¿¥29.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp2.jpg " />
+										<div class="pro-title ">ZEK åå³æµ·è</div>
+										<span class="e-price ">ï¿¥8.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp.jpg " />
+										<div class="pro-title ">è¨æç±³ 1+1å°é¸¡è¿</div>
+										<span class="e-price ">ï¿¥29.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp2.jpg " />
+										<div class="pro-title ">ZEK åå³æµ·è</div>
+										<span class="e-price ">ï¿¥8.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp.jpg " />
+										<div class="pro-title ">è¨æç±³ 1+1å°é¸¡è¿</div>
+										<span class="e-price ">ï¿¥29.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp2.jpg " />
+										<div class="pro-title ">ZEK åå³æµ·è</div>
+										<span class="e-price ">ï¿¥8.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp.jpg " />
+										<div class="pro-title ">è¨æç±³ 1+1å°é¸¡è¿</div>
+										<span class="e-price ">ï¿¥29.90</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="list ">
+									<a href="# ">
+										<img src="../images/cp2.jpg " />
+										<div class="pro-title ">ZEK åå³æµ·è</div>
+										<span class="e-price ">ï¿¥8.90</span>
+									</a>
+								</div>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footer ">
+						<div class="footer-hd ">
+							<p>
+								<a href="# ">ææç§æ</a>
+								<b>|</b>
+								<a href="# ">ååé¦é¡µ</a>
+								<b>|</b>
+								<a href="# ">æ¯ä»å®</a>
+								<b>|</b>
+								<a href="# ">ç©æµ</a>
+							</p>
+						</div>
+						<div class="footer-bd ">
+							<p>
+								<a href="# ">å³äºææ</a>
+								<a href="# ">åä½ä¼ä¼´</a>
+								<a href="# ">èç³»æä»¬</a>
+								<a href="# ">ç½ç«å°å¾</a>
+								<em>Â© 2015-2025 Hengwang.com çæææ. æ´å¤æ¨¡æ¿ <a href="http://www.cssmoban.com/" target="_blank" title="æ¨¡æ¿ä¹å®¶">æ¨¡æ¿ä¹å®¶</a> - Collect from <a href="http://www.cssmoban.com/" title="ç½é¡µæ¨¡æ¿" target="_blank">ç½é¡µæ¨¡æ¿</a></em>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--å¼å¯¼ -->
+
+		<div class="navCir">
+			<li class="active"><a href="home3.html"><i class="am-icon-home "></i>é¦é¡µ</a></li>
+			<li><a href="sort.html"><i class="am-icon-list"></i>åç±»</a></li>
+			<li><a href="shopcart.html"><i class="am-icon-shopping-basket"></i>è´­ç©è½¦</a></li>	
+			<li><a href="../person/index.html"><i class="am-icon-user"></i>æç</a></li>					
+		</div>
+		<!--èå -->
+		<div class=tip>
+			<div id="sidebar">
+				<div id="wrap">
+					<div id="prof" class="item ">
+						<a href="# ">
+							<span class="setting "></span>
+						</a>
+						<div class="ibar_login_box status_login ">
+							<div class="avatar_box ">
+								<p class="avatar_imgbox "><img src="../images/no-img_mid_.jpg " /></p>
+								<ul class="user_info ">
+									<li>ç¨æ·åï¼sl1903</li>
+									<li>çº§&nbsp;å«ï¼æ®éä¼å</li>
+								</ul>
+							</div>
+							<div class="login_btnbox ">
+								<a href="# " class="login_order ">æçè®¢å</a>
+								<a href="# " class="login_favorite ">æçæ¶è</a>
+							</div>
+							<i class="icon_arrow_white "></i>
+						</div>
+
+					</div>
+					<div id="shopCart " class="item ">
+						<a href="# ">
+							<span class="message "></span>
+						</a>
+						<p>
+							è´­ç©è½¦
+						</p>
+						<p class="cart_num ">0</p>
+					</div>
+					<div id="asset " class="item ">
+						<a href="# ">
+							<span class="view "></span>
+						</a>
+						<div class="mp_tooltip ">
+							æçèµäº§
+							<i class="icon_arrow_right_black "></i>
+						</div>
+					</div>
+
+					<div id="foot " class="item ">
+						<a href="# ">
+							<span class="zuji "></span>
+						</a>
+						<div class="mp_tooltip ">
+							æçè¶³è¿¹
+							<i class="icon_arrow_right_black "></i>
+						</div>
+					</div>
+
+					<div id="brand " class="item ">
+						<a href="#">
+							<span class="wdsc "><img src="../images/wdsc.png " /></span>
+						</a>
+						<div class="mp_tooltip ">
+							æçæ¶è
+							<i class="icon_arrow_right_black "></i>
+						</div>
+					</div>
+
+					<div id="broadcast " class="item ">
+						<a href="# ">
+							<span class="chongzhi "><img src="../images/chongzhi.png " /></span>
+						</a>
+						<div class="mp_tooltip ">
+							æè¦åå¼
+							<i class="icon_arrow_right_black "></i>
+						</div>
+					</div>
+
+					<div class="quick_toggle ">
+						<li class="qtitem ">
+							<a href="# "><span class="kfzx "></span></a>
+							<div class="mp_tooltip ">å®¢æä¸­å¿<i class="icon_arrow_right_black "></i></div>
+						</li>
+						<!--äºç»´ç  -->
+						<li class="qtitem ">
+							<a href="#none "><span class="mpbtn_qrcode "></span></a>
+							<div class="mp_qrcode " style="display:none; "><img src="../images/weixin_code_145.png " /><i class="icon_arrow_white "></i></div>
+						</li>
+						<li class="qtitem ">
+							<a href="#top " class="return_top "><span class="top "></span></a>
+						</li>
+					</div>
+
+					<!--åå°é¡¶é¨ -->
+					<div id="quick_links_pop " class="quick_links_pop hide "></div>
+
+				</div>
+
+			</div>
+			<div id="prof-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					æ
+				</div>
+			</div>
+			<div id="shopCart-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					è´­ç©è½¦
+				</div>
+			</div>
+			<div id="asset-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					èµäº§
+				</div>
+
+				<div class="ia-head-list ">
+					<a href="# " target="_blank " class="pl ">
+						<div class="num ">0</div>
+						<div class="text ">ä¼æ å¸</div>
+					</a>
+					<a href="# " target="_blank " class="pl ">
+						<div class="num ">0</div>
+						<div class="text ">çº¢å</div>
+					</a>
+					<a href="# " target="_blank " class="pl money ">
+						<div class="num ">ï¿¥0</div>
+						<div class="text ">ä½é¢</div>
+					</a>
+				</div>
+
+			</div>
+			<div id="foot-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					è¶³è¿¹
+				</div>
+			</div>
+			<div id="brand-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					æ¶è
+				</div>
+			</div>
+			<div id="broadcast-content " class="nav-content ">
+				<div class="nav-con-close ">
+					<i class="am-icon-angle-right am-icon-fw "></i>
+				</div>
+				<div>
+					åå¼
+				</div>
+			</div>
+		</div>
+		<script>
+			window.jQuery || document.write('<script src="basic/js/jquery.min.js "><\/script>');
+		</script>
+		<script type="text/javascript " src="../basic/js/quick_links.js "></script>
+	</body>
+
+</html>

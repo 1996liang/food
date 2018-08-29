@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 修改当前 Struts 应用的主题 -->
+    <package name="default" namespace="/" extends="struts-default">
+    	<!-- 配置自定义拦截器 -->
+		<interceptors>
+			<interceptor name="userInterceptor" class="userInterceptor"/>
+		</interceptors>
+		<global-results>
+			<result name="login">/home/login.jsp</result>
+		</global-results>
+ 		<action name="user_*" class="userAction" method="{1}">
+ 			<result name="register_success">operate_success.jsp</result>
+ 			<result name="activity_success" type="redirect">home/emailActivation.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<result name="input">register.jsp</result>
+ 			<result name="success">../index.jsp</result>
+ 			<result name="error">login.jsp</result>
+ 		</action>
+ 		<action name="index" class="indexAction">
+ 			<result type="redirect">home/home.jsp</result>
+ 		</action> 
+ 		<action name="information_*" class="informationAction" method="{1}">
+ 			<result type="dispatcher" name="redirectPage">../person/information.jsp</result>
+ 			<result type="dispatcher" name="redirectSuccess">../person/success.jsp</result>
+ 			<result type="dispatcher" name="input">../person/success.jsp</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="evaluate_*" class="evaluateAction" method="{1}">
+ 			<result type="dispatcher" name="redirectPage">../person/commentlist.jsp</result>
+ 			<result type="dispatcher" name="redirectSuccess">../person/success.jsp</result>
+ 			<result type="dispatcher" name="userEvaluate">../person/comment.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="orderInfo_*" class="orderInfoAction" method="{1}">
+ 			<result type="dispatcher" name="success">../person/orderinfo.jsp</result>
+ 			 <result name="input">
+ 				../person/orderinfo.jsp
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="addressManage_*" class="addressManageAction" method="{1}">
+ 			<result type="dispatcher" name="success">../person/address.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<result name="input">
+ 				../person/address.jsp
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="orderManage_*" class="orderManageAction" method="{1}">
+ 			<result type="dispatcher" name="success">../person/orderManage.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<result name="input">
+ 				../person/orderManage.jsp
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="safeSetUp_*" class="safeSetUpAction" method="{1}">
+ 			<result type="dispatcher" name="passwordPage">../person/password.jsp</result>
+ 			<result type="dispatcher" name="emailPage">../person/email.jsp</result>
+ 			<result type="dispatcher" name="phonePage">../person/bindphone.jsp</result>
+ 			<result type="dispatcher" name="success">../person/success.jsp</result>
+ 			<result type="dispatcher" name="redirectIndex">../person/safety.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+    	<action name="redirect_person_*">
+    		<result type="dispatcher">../person/{1}.jsp</result>
+    		<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+    	</action>
+ 		<action name="search_*" class="searchAction" method="{1}">
+ 			<result type="redirect">home/search.jsp</result>
+ 		</action>
+ 		<action name="pay_*" class="payAction" method="{1}">
+ 			<result type="redirect">home/pay.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<result name="redirectSuccessPage" type="redirect">home/success.jsp</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="car_*" class="carAction" method="{1}">
+ 			<result type="redirect">home/shopcart.jsp</result>
+ 			<result type="redirect" name="input">home/introduction.jsp</result>
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="orderContact_*" class="orderContactAction" method="{1}">
+ 			<result name="ajaxSuccess" type="stream">
+ 				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+ 			</result>
+ 			<interceptor-ref name="userInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+ 		</action>
+ 		<action name="introduction_*" class="introductionAction" method="{1}">
+ 			<result type="redirect">home/introduction.jsp</result>
+ 		</action>
+ 		
+    </package>
+</struts>   

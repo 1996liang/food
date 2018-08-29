@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-14 21:43:36 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.anta.evaluate.entity.Evaluate" table="EVALUATE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        <property name="star" type="java.lang.Integer">
+            <column name="STAR" />
+        </property>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+        <many-to-one name="orderItem" class="com.anta.order.entity.OrderItem" column="orderItem_ID" unique="true" lazy="false"/>
+        <property name="Images" type="java.lang.String">
+            <column name="IMAGES" />
+        </property>
+    </class>
+</hibernate-mapping>

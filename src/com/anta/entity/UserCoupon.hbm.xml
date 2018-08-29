@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-11 16:57:57 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.anta.entity.UserCoupon" table="USERCOUPON">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="coupon" class="com.anta.entity.Coupon">
+            <column name="COUPON_ID" />
+        </many-to-one>
+        <many-to-one name="user" class="com.anta.user.entity.User">
+            <column name="USER_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

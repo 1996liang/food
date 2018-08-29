@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-22 22:25:06 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.anta.goodsLabel.entity.GoodsLabel" table="GOODS_LABEL">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="labelName" type="java.lang.String">
+            <column name="LABELNAME" />
+        </property>
+        <set name="goods" table="GOODS_LABEL_ITEM" inverse="true" lazy="false">
+        	<key column="GOODS_LABEL_ID"></key>
+        	<many-to-many class="com.anta.goods.entity.Goods" column="GOODS_ID"></many-to-many>
+        </set>
+         <many-to-one name="superGoodsName" class="com.anta.goodsLabel.entity.GoodsLabel" lazy="false">
+        	 <column name="superGoodsName" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

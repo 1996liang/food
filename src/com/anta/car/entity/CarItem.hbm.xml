@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-1 0:13:23 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.anta.car.entity.CarItem" table="CAR_ITEM">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="goods" class="com.anta.goods.entity.Goods" lazy="false">
+            <column name="GOODS" />
+        </many-to-one>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="QUANTITY" />
+        </property>
+        <many-to-one name="user" class="com.anta.user.entity.User" lazy="false">
+            <column name="USER" />
+        </many-to-one>
+        <set name="goodsOptions" table="OPTIONS_CARITEM_ITEM" lazy="false">
+            <key>
+                <column name="CarItem_ID" />
+            </key>
+            <many-to-many class="com.anta.options.entity.GoodsOptions" column="GOODS_OPTIONS_ID"/>
+        </set>
+    </class>
+</hibernate-mapping>

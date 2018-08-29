@@ -1,0 +1,45 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+
+
+
+	<!-- 针对 username 属性进行验证. 基于字段的验证 -->
+	<field name="user.phone">
+		<!-- 设置短路验证: 若当前验证没有通过, 则不再进行下面的验证 -->
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="error.usernameStringNull"></message>
+		</field-validator>
+	</field>
+	<field name="code">
+		<!-- 设置短路验证: 若当前验证没有通过, 则不再进行下面的验证 -->
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="error.codeStringNull"></message>
+		</field-validator>
+	</field>
+	<field name="user.password">
+		<!-- 设置短路验证: 若当前验证没有通过, 则不再进行下面的验证 -->
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="error.passwordStringNull"></message>
+		</field-validator>
+	</field>
+	<field name="rePassword">
+		<!-- 设置短路验证: 若当前验证没有通过, 则不再进行下面的验证 -->
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="error.rePasswordStringNull"></message>
+		</field-validator>
+	</field>
+	<!-- 测试非字段验证 -->
+     <validator type="expression">
+        <param name="expression"><![CDATA[user.password==rePassword]]></param>
+        <message key="error.passwordDiffer"></message>
+     </validator>
+
+
+</validators>
